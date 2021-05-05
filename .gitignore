@@ -1,0 +1,9 @@
+.bloop/
+.metals/
+.bsp/
+.idea/
+target/
+
+project/*
+!project/build.properties
+!project/plugins.sbt

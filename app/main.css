@@ -1,0 +1,68 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    background-color: #666666;
+    font-family: "DejaVu Sans", sans-serif;
+}
+
+.content {
+    width: 60em;
+    margin-left: calc(50% - 30em);
+}
+
+h1 {
+    padding: 0.1em
+}
+
+.book {
+    margin-bottom: 1em;
+    background-color: white;
+    padding: 0.1em 0.5em 1em 0.5em;
+    opacity: 60%;
+}
+
+.book h2 {
+    margin-bottom: 0.5em;
+    cursor: pointer;
+}
+
+.book .tags {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.book .tags div:not(:first-child)::before {
+    content: '\2022';
+    height: 1em;
+    margin: 0.25em;
+}
+
+.book .tags .author {
+    font-style: italic;
+}
+
+.book .tags .country,.year {
+    font-weight: bold;
+}
+
+.new-note input {
+    width: 75%;
+}
+
+.note {
+    margin-top: 0.5em;
+    border-top: solid;
+}
+
+.note .note-text {
+    display: inline-block;
+    width: calc(75% - 0.5em);
+    padding: 0.5em 0.5em 0.5em 0;
+}
+
+.note .note-date {
+    display: inline-block;
+    width: calc(25% - 1em);
+    padding: 0.5em 0 0.5em 1em;
+}
